@@ -49,6 +49,7 @@ export const Banner = () => {
                             <br/>
                             <span className="wrap">{text}</span>
                         </h1>
+                        <p>This is my personal portfolio, and this website is used to share my personal projects</p>
                         <button onClick={() => {
                             console.log('connect')
                         }}>Let's Connect<ArrowRightCircle size={25}/>
