@@ -53,20 +53,23 @@ export const Projects = () => {
                                         {
                                             projects.map((projects,index)=>{
                                                 return (
-                                                    <p>{projects.title}</p>
-
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...projects}
+                                                    />
                                                 )
                                             })
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">Loren Ipsum</Tab.Pane>
-                                <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
+                                <Tab.Pane eventKey="second">Coming soon</Tab.Pane>
+                                <Tab.Pane eventKey="third">Coming soon</Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-right" src={colorSharp2} alt=""/>
         </section>
     )
 }
